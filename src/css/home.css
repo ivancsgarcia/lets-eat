@@ -1,0 +1,27 @@
+.home {
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.rfy,
+.ar {
+  /* border: 1px solid black; */
+  min-height: 20svh;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+.row-1 {
+  max-width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+
+h3 {
+  margin: 10px;
+}

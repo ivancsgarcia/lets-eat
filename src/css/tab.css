@@ -1,0 +1,22 @@
+.tab {
+  /* display: flex; */
+  border: 1px solid black;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  margin: auto;
+}
+
+table,
+td {
+  margin: auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td {
+  padding: 3px 20px;
+}
+
+/* .tab p {
+  border: 1px solid black;
+} */
