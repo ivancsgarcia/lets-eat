@@ -1,0 +1,8 @@
+.scrollable-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: wrap;
+  /* padding: 10px; */
+  /* margin: 0; */
+  display: flex;
+}

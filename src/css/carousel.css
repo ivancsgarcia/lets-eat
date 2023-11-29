@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   max-width: 600px;
-  margin: auto;
+  margin: -15px auto auto;
   /* border: 1px solid black; */
 }
 

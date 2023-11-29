@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../css/signin.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignIn() {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function SignIn() {
 
   return (
     <div className="signin">
-      <img src="" alt="bg-pic" />
+      <img src="/images/lets-eat.jpg" alt="lets-eat" />
       <h1>Sign In To Your Account</h1>
       <form action="" onSubmit={handleSubmit}>
         <input
@@ -45,14 +45,18 @@ function SignIn() {
         />
         <input type="submit" className="submit" />
       </form>
-      <a href="#" className="forgot-password">
-        Forgot Password?
-      </a>
+      <Link to={"/forgot-password"}>
+        <a href="#" className="forgot-password">
+          Forgot Password?
+        </a>
+      </Link>
       <p className="sign-up-p">
         Don't have an account?{" "}
-        <a href="#" className="sign-up">
-          Sign Up
-        </a>
+        <Link to={"/signup"}>
+          <a href="#" className="sign-up">
+            Sign Up
+          </a>
+        </Link>
       </p>
     </div>
   );

@@ -1,27 +1,39 @@
-.information img {
-  width: 50px;
-  height: 50px;
+.information {
+  position: relative;
+  padding-bottom: 85px;
+}
+
+.information .left,
+.information .bookmark {
+  width: 25px;
+  height: 25px;
   margin: auto;
 }
 
-.top {
-  padding: 10px;
+.information .left {
+  margin: 20px 15px 15px;
+  display: inline;
 }
 
-.bookmark {
+.information .bookmark {
   position: absolute;
-  right: 10px;
+  right: 0;
+  margin: 20px 15px 15px;
+  display: inline;
 }
 
 .recipe {
   border: 1px solid black;
-  margin: 2% 2% 3% 2%;
+  /* margin: 2% 2% 3% 2%; */
   padding: 1rem;
+  width: 95%;
   border-radius: 5px;
+  margin: 0 auto 20px;
 }
 
 .recipe h1 {
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .recipe img {
@@ -34,7 +46,7 @@
 .info {
   margin: auto;
   border: 1px solid black;
-  height: 400px;
+  min-height: 400px;
   width: 95%;
   border-radius: 10px;
   display: grid;
@@ -43,26 +55,38 @@
     "time nutritions";
 }
 
+.info h3 {
+  padding-top: 0;
+}
+
+.info p {
+  padding: 10px;
+}
+
 .inf {
   grid-area: info;
-  min-height: 100px;
-  margin: 10px 5px 10px;
+  /* min-height: 100px; */
+  margin: 10px 5px 0;
   width: auto;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 
 .cook-time {
   grid-area: time;
   min-height: 200px;
-  margin: 5px 10px 5px;
+  margin: 5px;
   width: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .nutritions {
   grid-area: nutritions;
   min-height: 200px;
-  margin: 5px 10px 5px;
+  margin: 5px;
   width: auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+
+span {
+  font-weight: bold;
 }
